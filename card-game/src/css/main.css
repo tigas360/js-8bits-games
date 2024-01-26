@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#player_deck_1
+{
+    border-bottom: 1px solid rgba(100,100,100,.5);
+}
+#player_deck_2
+{
+    border-bottom: 1px solid rgba(100,100,100,.5);
+}
+
+.card
+{
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+    width: 64.5mm;
+    height: 88.9mm;
+    border: 2px solid rgb(30,30,220);
+    border-radius: 2mm;
+    background-color: rgb(40,70,80);
+    background-size: cover;
+}
+
+.card > span.label
+{
+    display: flex;
+    align-items: center;
+    height: 10mm;
+    position: absolute;
+    top: 3mm;
+    padding: 2mm;
+    background-color: aliceblue;
+    width: 62mm;
+    flex-flow: column;
+}
+
+.card > .picture {
+    background: url("https://images.unsplash.com/photo-1574007557239-acf6863bc375?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 32mm;
+    width: 62mm;   
+}
+
+.card > .info {
+    display: flex;
+   /* position: absolute;*/
+    right: 0;
+    left: 0;
+    background-color: #e4f2fd;
+    align-items: center;
+    padding: 10px;
+    bottom: 1px;
+}
+
+.card > .info h2 {
+    color: #334454;
+    font-size: 1.2rem;
+}
+.card > .info p {
+    color: #a1b2bc;
+    font-size: 0.8rem;
+}
+.card > .info p b {
+    font-style: italic;
+}
